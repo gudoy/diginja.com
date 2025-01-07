@@ -43,15 +43,16 @@
   <link rel="stylesheet" href="/public/stylesheets/reset.css" />
   <link rel="stylesheet" href="/public/stylesheets/app.css" />
   <link rel="stylesheet" href="/public/stylesheets/layout.css" />
+  <link rel="stylesheet" href="/public/stylesheets/home.css" />
 
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
-  <link rel="apple-touch-icon-precomposed" href="/public/media/images/icons/icon.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/media/images/icons/touch-icon72x72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/media/images/icons/touch-icon114x114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/media/images/icons/touch-icon144x144.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="512x512" href="/public/media/images/icons/touch-icon512x512.png" />
-  <meta name="msapplication-TileImage" content="public/media/images/icons/pinnedsite-icon144x144.png" />
+  <link rel="apple-touch-icon-precomposed" href="/public/media/images/icons/icon.svg" width="64" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/media/images/icons/touch-icon72x72.svg" width="64" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/media/images/icons/touch-icon114x114.svg" width="64" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/media/images/icons/touch-icon144x144.svg" width="64" />
+  <link rel="apple-touch-icon-precomposed" sizes="512x512" href="/public/media/images/icons/touch-icon512x512.svg" width="64" />
+  <meta name="msapplication-TileImage" content="public/media/images/icons/pinnedsite-icon144x144.svg" width="64" />
   <meta name="msapplication-TileColor" content="#ffffff" />
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -64,9 +65,9 @@
   <div id="home" class="layout page home" role="window">
     
     <header id="header" class="header" role="banner">
-      <div id="branding" class="logoBlock lv1Title">
+      <div id="branding" class="branding">
         <a id="logo" class="logo" rel="home" href="/">
-          <img src="public//images/logos/logo-diginja.png" alt="Diginja" />
+          <img src="public//images/logos/logo-diginja.png" alt="Diginja" width="64" />
         </a>
         <div class="baseline" id="baseline">Digital Ninja</div>
       </div>
@@ -75,7 +76,7 @@
     <div class="body" id="body">
       <div id="main" class="main" role="main">
 
-          <section class="shortPresentation" id="shortPresentation">
+          <section class="short-presentation" id="short-presentation">
             <p class="name">
               <span class="key">My name is</span>
               <strong class="fn n value"><span class="given-name">Guyllaume</span> <span class="family-name">Doyer</span></strong>
@@ -92,19 +93,19 @@
             </p>
           </section>
 
-          <section class="alsoOn" id="alsoOn">
+          <section class="also-on" id="also-on">
             <header>
               <h3 class="title">Find me on</h3>
             </header>
             <ul>
               <li class="github">
-                <a href="https://github.com/gudoy">Github</a>
+                <a href="https://github.com/gudoy"><img src="/public/images/logos/logo-github.svg" alt="Github" width="64" /></a>
               </li>
               <li class="linkedin">
-                <a href="http://www.linkedin.com/profile/view?id=18977144">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/guyllaumedoyer/"><img src="/public/images/logos/logo-linkedin.svg" alt="LinkedIn" width="64" /></a>
               </li>
               <li class="mail">
-                <a href="mailto:doyer.guyllaume@gmail.com">Mail</a>
+                <a href="mailto:doyer.guyllaume@gmail.com"><img src="/public/images/logos/logo-gmail.svg" alt="Gmail" width="64" /></a>
               </li>
             </ul>
           </section>
@@ -112,6 +113,7 @@
       </div>
     </div>
 
+    <!--
     <footer class="footer" id="footer">
       <section class="contentInfo" id="contentInfo" role="contentinfo">
         <div class="metas">
@@ -122,7 +124,8 @@
         </div>
       </section>
     </footer>
-    
+    -->
+
   </div>
 </body>
 

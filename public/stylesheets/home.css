@@ -1,0 +1,39 @@
+.page.home {
+
+    .body {
+        margin-inline: 5rem;
+    }
+
+    .short-presentation {
+        font-size: 2rem;
+        line-height: 3.6rem;
+        margin-block-end: 2rem;
+    }
+
+    .also-on {
+        .title {
+            clip: rect(0 0 0 0); 
+            clip-path: inset(50%);
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap; 
+            width: 1px;
+        }
+
+        ul {
+            display: inline-block;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                margin-inline-end: 1rem;
+            }
+
+            img {
+                width: 3rem;
+                aspect-ratio: 1;
+            }
+        }
+    }
+}
