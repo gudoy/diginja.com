@@ -1,3 +1,16 @@
+:root {
+    --font-size: 1.6rem;
+    --line-height: calc(1.75 * var(--font-size)); /* 2.8 rem */
+
+    --logo-size: 2rem;
+
+    --header-bg-color: black;
+    --header-text-color: white;
+
+    --body-bg-color: var(--header-text-color);
+    --body-text-color: var(--header-bg-color);
+}
+
 html,
 body {
     width: 100%;
@@ -7,36 +20,64 @@ body {
 .layout {
     height: 100%;
     display: grid;
-    grid-template-areas: "header body";
-    grid-template-columns: minmax(1fr, 1024px) 1fr;
+    grid-template-areas: "header"
+                         "body";
+    grid-template-rows: 50px 1fr;
 }
 
 #header {
-    display: grid;
     grid-area: header;
-    background: black;
-    color: white;
-    padding: 1rem;
-    place-content: center center;
-}
+    background: var(--header-bg-color);
+    color: var(--header-text-color);
+    align-items: center;
+    display: grid;
 
-#logo { 
-    display: inline-block;
-
-    > img {
-        aspect-ratio: 1;
-        width: 200px;
-        display: block;
+    #branding {
+        display: flex;
+        place-items: center start;
+        gap: 0.5rem;
+        margin-inline: 1rem;
     }
-}
-#baseline {
-    font-size: 2rem;
+
+    #logo {
+        display: block;
+
+        > img {
+            aspect-ratio: 1;
+            width: var(--logo-size);
+            display: block;
+        }
+    }
+
+    #baseline {
+        font-size: var(--font-size);
+    }
 }
 
 #body {
     grid-area: body;
-    background: white;
-    color: black;
-    padding: 2rem;
-    place-content: center start;
+    background: var(--body-bg-color);
+    color: var(--body-text-color);
+    padding: var(--font-size);
+}
+
+@media screen and (min-width: 48rem) {
+    :root{
+        --logo-size: 13rem;
+        --font-size: 2rem;
+    }    
+
+    .layout {
+        grid-template-areas: "header body";
+        grid-template-columns: minmax(1fr, 1024px) 1fr;
+        grid-template-rows: auto;
+    }
+
+    #header {
+        justify-content: center;
+    }
+
+    #body {
+        align-content: center;
+    }
 }

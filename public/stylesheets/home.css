@@ -1,13 +1,12 @@
 .page.home {
-
-    .body {
-        margin-inline: 5rem;
-    }
+    --home-font-size: 1.6rem;
+    --home-line-height: calc(1.75 * var(--home-font-size)); /* 2.8 rem */
+    --home-ext-icons-size: calc(1.5 * var(--home-font-size));
 
     .short-presentation {
-        font-size: 2rem;
-        line-height: 3.6rem;
-        margin-block-end: 2rem;
+        font-size: var(--home-font-size);
+        line-height: var(--home-line-height);
+        margin-block-end: calc(0.6 * var(--home-font-size)); 
     }
 
     .also-on {
@@ -31,9 +30,14 @@
             }
 
             img {
-                width: 3rem;
+                width: var(--home-ext-icons-size);
                 aspect-ratio: 1;
             }
         }
     }
+
+    @media screen and (min-width: 48rem) {
+        --home-font-size: 2rem;
+    }
 }
+
