@@ -6,17 +6,17 @@
     .short-presentation {
         font-size: var(--home-font-size);
         line-height: var(--home-line-height);
-        margin-block-end: calc(0.6 * var(--home-font-size)); 
+        margin-block-end: calc(0.6 * var(--home-font-size));
     }
 
     .also-on {
         .title {
-            clip: rect(0 0 0 0); 
+            clip: rect(0 0 0 0);
             clip-path: inset(50%);
             height: 1px;
             overflow: hidden;
             position: absolute;
-            white-space: nowrap; 
+            white-space: nowrap;
             width: 1px;
         }
 
@@ -40,4 +40,3 @@
         --home-font-size: 2rem;
     }
 }
-

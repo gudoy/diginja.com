@@ -20,8 +20,9 @@ body {
 .layout {
     height: 100%;
     display: grid;
-    grid-template-areas: "header"
-                         "body";
+    grid-template-areas:
+        'header'
+        'body';
     grid-template-rows: 50px 1fr;
 }
 
@@ -62,14 +63,15 @@ body {
 }
 
 @media screen and (min-width: 48rem) {
-    :root{
+    :root {
         --logo-size: 13rem;
         --font-size: 2rem;
-    }    
+        --max-header-width: 1024px;
+    }
 
     .layout {
-        grid-template-areas: "header body";
-        grid-template-columns: minmax(1fr, 1024px) 1fr;
+        grid-template-areas: 'header body';
+        grid-template-columns: max(var(--max-header-width)) 1fr;
         grid-template-rows: auto;
     }
 
