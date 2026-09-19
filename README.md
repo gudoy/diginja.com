@@ -52,6 +52,37 @@ diginja.com/
 └── README.md      # Project documentation
 ```
 
+## Commit Convention
+This project follows [Conventional Commits](https://www.conventionalcommits.org/).
+Every commit message is checked by `commitlint` through a Husky `commit-msg` hook,
+which is installed automatically when you run `npm install`.
+
+A message looks like this:
+```
+<type>(<optional scope>): <description>
+
+<optional body>
+
+<optional footer>
+```
+
+Allowed types are `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`,
+`build`, `ci`, `chore` and `revert`. The description is written in the imperative
+mood, starts with a lowercase letter and carries no trailing period.
+
+Examples:
+```
+feat(home): add a language switcher
+fix(build): emit the PWA icons in production
+docs(readme): document the commit convention
+```
+
+A breaking change is marked with a `!` after the type, or with a
+`BREAKING CHANGE:` footer.
+
+If a commit is rejected, `commitlint` prints the failing rule. Amend the message
+with `git commit --amend` and commit again.
+
 ## License
 This project is licensed as **UNLICENSED** and is not publicly available.
 For more details, you can contact the author via email: [doyer.guyllaume@gmail.com](mailto:doyer.guyllaume@gmail.com).
