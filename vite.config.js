@@ -1,7 +1,7 @@
 export default {
     // config options
     root: 'src/',
-    publicDir: 'src/public',
+    publicDir: 'public',
     build: {
         outDir: '../dist/static/',
         assetsDir: 'public',
